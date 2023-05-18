@@ -1,0 +1,22 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-image: url('src/assets/background.jpg');
+  height: 100vh;
+}
+
+body{
+  min-width: unset;
+}
+
+.optionGame{
+  --select-bg: #329cff7a
+  background-color: #329cff7a;
+}
+
+canvas {
+  max-width: 100%;
+  border-radius: 5px;
+}
