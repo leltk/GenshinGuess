@@ -19,7 +19,7 @@ const GameCard = ({pixel,char}:IGameCardProps)=> {
         width={400}
         height={200}
         pixelSize={pixel}
-      src={`./assets/chars/${charFormat}.png`}
+        src={`../../src/assets/chars/${charFormat}.png`}
       
       
     />
