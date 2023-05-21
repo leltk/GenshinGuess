@@ -9,7 +9,7 @@ import Credits from './components/Credits'
 
 function App() {
   const [pixelated, setPixelated] = useState(30)
-  const [answer, setAnswer]= useState('')
+  const [answer, setAnswer]= useState('ayaka')
 
 
   return (

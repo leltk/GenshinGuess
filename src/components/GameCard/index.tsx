@@ -8,6 +8,7 @@ interface IGameCardProps {
 
 
 const GameCard = ({pixel,char}:IGameCardProps)=> {
+    const charFormat: string = char[0].toUpperCase() + char.slice(1) || '';
 
 
     return (
@@ -18,7 +19,7 @@ const GameCard = ({pixel,char}:IGameCardProps)=> {
         width={400}
         height={200}
         pixelSize={pixel}
-      src={`./assets/chars/${char}.png`}
+      src={`./src/assets/chars/${charFormat}.png`}
       
       
     />
