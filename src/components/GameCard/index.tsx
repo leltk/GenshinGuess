@@ -1,4 +1,4 @@
-import {Card} from '@chakra-ui/react'
+import {Card,Image} from '@chakra-ui/react'
 import { ImagePixelated} from "react-pixelate"
 
 interface IGameCardProps {
@@ -13,7 +13,7 @@ const GameCard = ({pixel,char}:IGameCardProps)=> {
 
     return (
     <Card maxW='sm' border={'0.1px solid'} borderColor={'#fff'} display={'flex'} justifyContent={'center'} p={'5px'}>
- 
+      {pixel> 0? 
         <ImagePixelated 
          
         width={400}
@@ -21,8 +21,10 @@ const GameCard = ({pixel,char}:IGameCardProps)=> {
         pixelSize={pixel}
         src={`static/images/${charFormat}.png`}
       
+    />:
+        <Image w={400} h={200} src={`static/images/${charFormat}.png`}/>
+      }
       
-    />
    
     
     </Card>)
